@@ -1,0 +1,36 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.bg-primary{
+    background-color: #27548A;
+}
+
+.bg-secondary{
+    background-color: #F5EEDC;
+}
+
+.bg-orange{
+    background-color: #DDA853;
+}
+
+.bg-blue{
+    background-color: #183B4E;
+}
+
+.text-primary{
+    color: #27548A;
+}
+
+.text-secondary{
+    color: #F5EEDC;
+}
+
+.text-orange{
+    color: #DDA853;
+}
+
+.text-blue{
+    color: #183B4E;
+}
