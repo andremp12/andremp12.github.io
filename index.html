@@ -213,7 +213,7 @@
             <div class="px-10 lg:px-36 pb-16 lg:pb-28 pt-6 lg:pt-12 w-full">
                 <h1 data-aos="fade-right" data-aos-duration="1000" data-aos="fade-right" data-aos-duration="1000" class="text-3xl lg:text-5xl text-cream text-start font-bold mt-8 mb-2 lg:mb-4 z-20">Portofolio</h1>
                 <p data-aos="fade-right" data-aos-duration="1000" class="text-gray-custom font-medium text-sm lg:text-xl break-words mb-6 lg:mb-12 text-pretty">Beberapa project-project saya dalam meningkatkan skill dan pengalaman</p>
-                    <div x-data="loadData()" x-init="fetchData()" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div x-data="loadData()" x-init="fetchData()" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-hidden">
                         <template x-for="item in items" :key="item.id">
                             <div data-aos="fade-up" data-aos-duration="1000" x-data="{open:false}" class="rounded-lg shadow-lg bg-gray-200 transition-transform hover:scale-105 duration-300 relative overflow-hidden">
                                 <div :class="'blur':open">
@@ -277,7 +277,7 @@
             <div class="px-10 lg:px-44 pt-16 lg:pt-22 pb-16 w-full">
                 <h1 data-aos="fade-right" data-aos-duration="1000" class="text-3xl lg:text-5xl text-cream text-start font-bold mb-2 lg:mb-4 z-20">Sertifikat</h1>
                 <p data-aos="fade-right" data-aos-duration="1000" class="text-gray-custom font-medium text-sm lg:text-xl break-words mb-8 text-pretty">Sertifikat dan penghargaan penyelesaian kursus, pelatihan, magang dan lainnya</p>
-                <div x-data="loadData()" x-init="getCertificate()" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-x-6 md:gap-y-6">
+                <div x-data="loadData()" x-init="getCertificate()" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-x-6 md:gap-y-6 overflow-hidden">
                     <template x-for="item in certifications" :key="item.id">
                         <a data-aos="fade-left" data-aos-duration="1000" :href="item.image" :data-lightbox="item.id">
                             <div class="rounded-lg transition-transform hover:scale-105 duration-300">
