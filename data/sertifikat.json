@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "title":"Sertifikat Database Programming With SQL",
+        "image":"/images/database-sql.webp"
+    },
+    {
+        "id":2,
+        "title":"Sertifikat Database Programming With PL/SQL",
+        "image":"/images/database-pl-sql.webp"
+    },
+    {
+        "id":3,
+        "title":"Sertifikat Internship PT ISOAE SOLUSINE",
+        "image":"/images/internship.webp"
+    },
+    {
+        "id":4,
+        "title":"Sertifikat Kompetensi Junior Web Developer (BNSP)",
+        "image":"/images/kompetensi.webp"
+    }
+]

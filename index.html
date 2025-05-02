@@ -1,27 +1,416 @@
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andre Mahesa Putra | Web Developer</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
     
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
-    <div class="w-full">
-        <!-- Part Navbar -->
-        <nav>
+<body class="bg-primary">
+    <div class="w-full relative">
+        <div class="flex md:hidden items-center text-lg absolute top-10 left-10">
+            <div class="w-fit block">
+                <a href="/" class="text-white font-bold text-xl tracking-wide flex items-center">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                         <path fill="currentColor" d="M12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2zm0 2h2v2h-2z"/>
+                        </svg>
+                    </span>
+                    <span class="text-white">ndre</span><span class="text-blue-400">mahesa</span>
+                  </a>
+            </div>
+        </div>
 
+        <!-- Part Navbar -->
+        <nav class="w-full fixed backdrop-blur-md bg-transparent bg-opacity-10 top-0 z-50">
+            <div class="py-6 hidden md:flex md:px-10 h-auto w-full justify-between gap-4">
+                <div class="gap-8 flex items-center text-lg">
+                    <div class="w-fit block">
+                        <a href="/" class="text-white font-bold text-xl tracking-wide flex items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                 <path fill="currentColor" d="M12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2zm0 2h2v2h-2z"/>
+                                </svg>
+                            </span>
+                            <span class="text-white">ndre</span><span class="text-blue-400">mahesa</span>
+                          </a>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex flex-no-wrap gap-x-2 text-white text-lg font-semibold">
+                        <li>
+                            <a href="#home" class="p-2 rounded-lg hover:bg-black/20">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="p-2 rounded-lg hover:bg-black/20">
+                                Tentang Saya
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portofolio" class="p-2 rounded-lg hover:bg-black/20">
+                                Portofolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#certifications" class="p-2 rounded-lg hover:bg-black/20">
+                                Sertifikat
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="p-2 rounded-lg hover:bg-black/20">
+                                Kontak
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <!-- Part Home -->
-        <div class="min-h-screen w-full bg-primary">
-            <div class="w-full flex flex-col sm:flex-row gap-4">
-                
+        <div id="home" class="pb-28 pt-32 lg:pt-22 min-h-screen w-full relative">
+            <div class="w-full flex flex-col-reverse lg:flex-row gap-4 lg:gap-7 px-10 lg:px-36 relative">
+                <div class="w-full lg:w-1/2 lg:pt-22 z-10 flex flex-col justify-center">
+                    <h1 data-aos="fade-right" data-aos-duration="1000" class="text-xl text-center lg:text-start md:text-3xl lg:text-4xl text-cream font-light mb-1">Hai semua &#128075;, saya</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="1000" class="text-3xl text-center lg:text-start md:text-5xl lg:text-7xl text-cream font-bold mb-1">Andre Mahesa Putra</h1>
+                    <!-- <div class="w-58 h-2 bg-orange-400 mb-4"></div> -->
+                    <div data-aos="fade-right" data-aos-duration="1000" class="inline-block min-w-40 text-center lg:text-start min-h-12 lg:min-h-16">
+                        <span id="typewriter" class="text-gray-300 text-center lg:text-start text-lg md:text-2xl lg:text-4xl font-light inline"></span>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="1000" class="flex gap-4 items-center justify-center lg:justify-start">
+                        <a href="https://www.linkedin.com/in/andre-mahesa-putra-5744b4314" target="_blank" class="group p-3 rounded-full border border-gray-500 hover:bg-gray-100 hover:border-gray-100 flex items-center justify-center transition duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                 viewBox="0 0 24 24" 
+                                 class="w-5 h-5 md:w-6 md:h-6 fill-gray-300 group-hover:fill-blue-800 transition duration-200">
+                              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 
+                                       1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 
+                                       0h4.7v2.2h.1c.7-1.3 2.4-2.7 5-2.7 5.4 0 6.4 3.5 
+                                       6.4 8.1V24h-5v-7.6c0-1.8 0-4.2-2.6-4.2-2.6 
+                                       0-3 2-3 4v7.8h-5V8z"/>
+                            </svg>
+                          </a>
+                          <a href="https://www.instagram.com/andre_mahesa_putra" target="_blank" class="group p-3 rounded-full border border-gray-500 hover:bg-gray-100 hover:border-gray-100 flex items-center justify-center transition duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                class="w-5 h-5 md:w-6 md:h-6 fill-gray-300 group-hover:fill-[#E1306C] transition duration-300">
+                                <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 2 .3 2.4.5.5.2.8.5 1.2.9.4.4.7.7.9 1.2.2.4.4 1.2.5 2.4.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 2-.5 2.4-.2.5-.5.8-.9 1.2-.4.4-.7.7-1.2.9-.4.2-1.2.4-2.4.5-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-2-.3-2.4-.5a3.5 3.5 0 0 1-1.2-.9 3.5 3.5 0 0 1-.9-1.2c-.2-.4-.4-1.2-.5-2.4-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.3-2 .5-2.4.2-.5.5-.8.9-1.2.4-.4.7-.7 1.2-.9.4-.2 1.2-.4 2.4-.5 1.2-.1 1.6-.1 4.8-.1m0-2.2C8.7 0 8.3 0 7 .1 5.6.1 4.6.3 3.8.6a5.6 5.6 0 0 0-2 1.3A5.6 5.6 0 0 0 .6 3.8C.3 4.6.1 5.6.1 7 0 8.3 0 8.7 0 12s0 3.7.1 5c.1 1.4.3 2.4.6 3.2.3.9.7 1.5 1.3 2a5.6 5.6 0 0 0 2 1.3c.8.3 1.8.5 3.2.6 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.4-.1 2.4-.3 3.2-.6a5.6 5.6 0 0 0 2-1.3 5.6 5.6 0 0 0 1.3-2c.3-.8.5-1.8.6-3.2.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.4-.3-2.4-.6-3.2a5.6 5.6 0 0 0-1.3-2A5.6 5.6 0 0 0 20.2.6c-.8-.3-1.8-.5-3.2-.6C15.3 0 14.9 0 12 0Z"/>
+                                <path d="M12 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8Zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"/>
+                                <circle cx="18.4" cy="5.6" r="1.44"/>
+                            </svg>
+                          </a>
+                          <a href="https://github.com/andremp12" target="_blank" class="group p-3 rounded-full border border-gray-500 hover:bg-gray-100 hover:border-gray-100 flex items-center justify-center transition duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                class="w-5 h-5 md:w-6 md:h-6 fill-gray-300 group-hover:fill-gray-800 transition duration-300">
+                                <path d="M12 0C5.37 0 0 5.373 0 12a12.01 12.01 0 0 0 8.205 11.385c.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.832 2.807 1.303 3.492.996.107-.776.42-1.303.763-1.603-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.47-2.38 1.237-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23A11.49 11.49 0 0 1 12 5.8c1.02.005 2.047.14 3.005.41 2.29-1.553 3.296-1.23 3.296-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.623-5.475 5.92.432.372.816 1.104.816 2.227 0 1.608-.015 2.905-.015 3.297 0 .32.216.694.825.576A12.01 12.01 0 0 0 24 12c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                          </a>
+                    </div>
+                    <!-- <div data-aos="zoom-in" data-aos-duration="1000" class="flex gap-4 mt-5 justify-center w-full">
+                        <button class="cursor-pointer px-4 py-2 bg-gray-300 rounded-lg font-semibold text-lg">Hubungi Saya</button>
+                    </div> -->
+                    
+                </div>
+                <div class="w-full lg:w-1/2 relative flex items-end justify-center">
+                    <div data-aos="fade-left" data-aos-duration="1000" class="relative w-fit h-fit">
+                        <div class="overflow-hidden rounded-full relative w-auto">
+                            <img src="/images/andre-mahesa-putra-2.png" alt="Andre Mahesa Putra" width="100" height="100" 
+                            class="w-full max-w-[290px] lg:max-w-[580px] h-auto object-cover object-center grayscale-30 md:grayscale-50 z-20 relative -mb-2" />
+                            
+                        </div>
+                        <div class="w-full h-auto aspect-square absolute bg-linear-to-t from-[#1c2a43] from-30% via-[#202d44] via-40% to-[#213448] to-70% -bottom-0 rounded-full z-10"></div>
+                        <!-- <div class="px-4 py-1 rounded-full bg-white w-fit absolute bottom-80 left-10 z-20">
+                            Web Developer
+                        </div>
+                        <div class="px-4 py-1 rounded-full bg-white w-fit absolute bottom-48 right-14 z-20">
+                            Frontend Developer
+                        </div>
+                        <div class="px-4 py-1 rounded-full bg-white w-fit absolute bottom-100 right-10 z-20">
+                            Backend Developer
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills" class="bg-secondary w-full px-10 lg:px-36 py-10 z-30 relative">
+            <div class="w-full flex flex-col gap-4">
+                <h1 data-aos="fade-right" data-aos-duration="1000" class="text-3xl text-center block md:hidden lg:text-start lg:text-8xl text-cream font-bold mb-4">Skills</h1>
+                <div class="w-full">
+                    <div class="w-full grid md:grid-cols-2 lg:grid-cols-5 lg:grid-rows-1 gap-4">
+                        <div class="w-full p-6 rounded-lg bg-gray-500/20 backdrop-blur-lg border border-gray-500 flex flex-col items-center">
+                            <img width="30" alt="Nuxt js" class="h-7 w-7" src="https://www.svglogos.net/wp-content/uploads/nuxt-icon.svg">
+                            <label for="" class="text-gray-100 text-lg font-semibold mt-6">Nuxt</label>
+                            <p class="font-medium text-gray-custom text-sm text-center">Pengalaman menggunakan framework +1 tahun.</p>
+                        </div>
+                        <div class="w-full p-6 rounded-lg bg-gray-500/20 backdrop-blur-lg border border-gray-500 flex flex-col items-center">
+                            <img width="25" alt="Nuxt js" class="h-7 w-7" src="https://www.svglogos.net/wp-content/uploads/laravel.svg">
+                            <label for="" class="text-gray-100 text-lg font-semibold mt-6">Laravel</label>
+                            <p class="font-medium text-gray-custom text-sm text-center">Pengalaman menggunakan framework +2 tahun.</p>
+                        </div>
+                        <div class="w-full p-6 rounded-lg bg-gray-500/20 backdrop-blur-lg border border-gray-500 flex flex-col items-center">
+                            <img width="50" alt="Nuxt js" class="h-7 w-7" src="https://www.svglogos.net/wp-content/uploads/go.svg">
+                            <label for="" class="text-gray-100 text-lg font-semibold mt-6">Go</label>
+                            <p class="font-medium text-gray-custom text-sm text-center">Pengalaman menggunakan +2 bulan. Pembuatan REST API. </p>
+                        </div>
+                        <div class="w-full p-6 rounded-lg bg-gray-500/20 backdrop-blur-lg border border-gray-500 flex flex-col items-center">
+                            <img width="35" alt="Nuxt js" class="h-7 w-7" src="https://www.svglogos.net/wp-content/uploads/tailwindcss-icon.svg">
+                            <label for="" class="text-gray-100 text-lg font-semibold mt-6">Tailwindcss</label>
+                            <p class="font-medium text-gray-custom text-sm text-center">Pengalaman menggunakan framework +1 tahun.</p>
+                        </div>
+                        <div class="w-full p-6 md:col-span-2 lg:col-span-1 rounded-lg bg-gray-500/20 backdrop-blur-lg border border-gray-500 flex flex-col items-center">
+                            <img width="15" alt="Nuxt js" class="h-7 w-7" src="https://www.svglogos.net/wp-content/uploads/figma.svg">
+                            <label for="" class="text-gray-100 text-lg font-semibold mt-6">Figma</label>
+                            <p class="font-medium text-gray-custom text-sm text-center">Pengalaman +2 tahun. Merancang wireframe, desain aplikasi, dan Use Case.</p>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="h-auto w-full relative py-20 lg:py-32">
+            <!-- <div class="w-82 h-82 rounded-full bg-secondary absolute bottom-92 left-62"></div> -->
+            <div class="w-32 h-32 rounded-full bg-secondary absolute bottom-82 left-32"></div>
+            <div class="w-full lg:px-36 px-10 flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/3 flex-col items-center justify-center w-full h-auto">
+                    <!-- <div class="w-full h-5 border-b border-white absolute -bottom-5 -left-0"></div> -->
+                    <div class="w-full h-auto flex justify-center items-end md:justify-start">
+                        <div class="w-auto max-w-sm h-auto relative">
+                            <div class="w-full h-2/3 border-r border-white absolute bottom-0 -right-3"></div>
+                            <div class="w-full h-5 border-b border-white absolute -bottom-3 left-0"></div>
+                            <img src="/images/about-profile.png" alt="andre mahesa putra" width="100" height="100" class="max-w-sm object-cover object-center grayscale-30 md:grayscale-50 w-full h-auto rounded-t-full"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 flex flex-col justify-start z-10 lg:pt-20 relative">
+                    <!-- <div class="w-82 h-92 relative">
+                        <div class="bg-gray-400 w-full h-full z-10 relative">
+                            
+                        </div>
+                        <div class="w-full h-full absolute border-4 border-white top-5 left-5 z-0">
+
+                        </div>
+                    </div> -->
+                    <h1 class="text-4xl lg:text-7xl text-cream font-semibold mb-4 absolute top-0 md:block  lg:top-8 -left-6">"</h1>
+                    <h1 class="text-3xl md:text lg:text-6xl text-cream  font-semibold mb-4">Tentang Saya</h1>
+                    <p class="text-gray-custom font-medium text-sm lg:text-xl break-words mb-4 text-pretty text-justify lg:text-start">Lulusan Politeknik Negeri Padang, prodi D3 Manajemen Informatika. 
+                        Memiliki kemampuan dalam pengembangan aplikasi berbasis website menggunakan teknologi seperti Nuxt js, Laravel, Go, dan Database MySQL. 
+                        Pengalaman sebagai fullstack developer selama 1 tahun, sebagai pegawai magang dan pegawai kontrak.    
+                    </p>
+                    <a href="/pdf/tes.pdf" target="_blank">
+                        <button class="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-lg font-semibold text-sm lg:text-lg w-fit cursor-pointer ">Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="portofolio" class="min-h-screen w-full relative bg-secondary">
+            <div class="px-10 lg:px-36 pb-16 lg:pb-28 pt-6 lg:pt-12 w-full">
+                <h1 class="text-3xl lg:text-5xl text-cream text-start font-bold mt-8 mb-2 lg:mb-4 z-20">Portofolio</h1>
+                <p class="text-gray-custom font-medium text-sm lg:text-xl break-words mb-6 lg:mb-12 text-pretty">Beberapa project-project saya dalam meningkatkan skill dan pengalaman</p>
+                    <div x-data="loadData()" x-init="fetchData()" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <template x-for="item in items" :key="item.id">
+                            <div x-data="{open:false}" class="rounded-lg shadow-lg bg-gray-200 transition-transform hover:scale-105 duration-300 relative overflow-hidden">
+                                <div :class="'blur':open">
+                                    <div class="w-full h-auto relative">
+                                        <img :src="item.image" :alt="item.title" class="object-cover rounded-t-lg object-center w-full sm:max-h-[250px]">
+                                    </div>
+                                    <div class="px-6 pb-2">
+                                        <div class="flex gap-6 justify-between">
+                                            <div>
+                                                <h2 class="font-semibold font-sans text-lg text-primary mt-2 mb-2" x-text="item.title"></h2>
+                                                <div class="flex gap-2 items-center">
+                                                    <template x-for="tool in item.tools" :key="tool.id">
+                                                        <div class="p-2 rounded-full bg-gray-900/50 w-fit h-fit flex items-center justify-center" :class="tool.class">
+                                                            <img class="w-5 h-5" :alt="tool.name" :src="tool.image" >
+                                                        </div>
+                                                    </template>
+                                                </div>
+                                            </div>
+                                            <button @click="open = !open" class="cursor-pointer rounded-b-full px-2 py-6 text-white font-semibold me-4 bg-[#1c2a43] hover:bg-[#31538d] h-fit w-fit">Show</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div 
+                                    x-show="open"
+                                    x-transition:enter="transition duration-300"
+                                    x-transition:enter-start="opacity-0 translate-y-4"
+                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                    x-transition:leave="transition duration-300"
+                                    x-transition:leave-start="opacity-100 translate-y-0"
+                                    x-transition:leave-end="opacity-0 translate-y-4"
+                                    class="absolute inset-0 bg-white/80 p-4 flex flex-col justify-center items-center text-center z-10 backdrop-blur"
+                                >
+                                    <p class="text-primary mb-4 text-xs text-pretty" x-text="item.description"></p>
+                                    <div class="flex flex-wrap mb-4 gap-1 items-center">
+                                        <label for="" class="text-xs lg:text-sm font-semibold text-primary">Tools : </label>
+                                        <template x-for="tool in item.tools" :key="tool.id">
+                                            <span class="text-xs lg:text-sm font-semibold px-2 py-1 rounded-full text-center w-fit border border-black" x-text="tool.name"></span>
+                                        </template>
+                                    </div>
+                                    <button 
+                                    class="cursor-pointer px-4 py-2 text-white text-xs lg:text-sm font-semibold bg-[#1c2a43] hover:bg-[#31538d] transition rounded-full" 
+                                    @click="open = false"
+                                    >Kembali</button>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                    
+                    <!-- <div class="rounded-lg bg-primary p-4">
+                        <div class="max-full h-auto">
+                            <img src="/images/youth-khalifa.png" alt="Project Ngepay" class="object-cover rounded-lg object-center w-full sm:max-h-[250px]">
+                        </div>
+                        <h2 class="font-semibold text-lg text-gray-1&#12930900 mt-4 mb-2">Web Youth Khalifa</h2>
+                        <p class="break-words text-sm font-light text-gray-200 text-pretty">Mengembangkan website sekolah dasar yang responsif dengan menyediakan fasilitas sistem seperti 
+                            CMS untuk manajemen konten sekolah, form pendafataran murid baru, dashboard CMS, dan dashboard calon murid baru.</p>
+                    </div> -->
+            </div>
+        </div>
+        <div id="certifications" class=" w-full relative bg-primary">
+            <div class="px-10 lg:px-44 pt-16 lg:pt-22 pb-16 w-full">
+                <h1 class="text-3xl lg:text-5xl text-cream text-start font-bold mb-2 lg:mb-4 z-20">Sertifikat</h1>
+                <p class="text-gray-custom font-medium text-sm lg:text-xl break-words mb-8 text-pretty">Sertifikat dan penghargaan penyelesaian kursus, pelatihan, magang dan lainnya</p>
+                <div x-data="loadData()" x-init="getCertificate()" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-x-6 md:gap-y-6">
+                    <template x-for="item in certifications" :key="item.id">
+                        <a :href="item.image" :data-lightbox="item.id">
+                            <div class="rounded-lg transition-transform hover:scale-105 duration-300">
+                                <div class="w-full h-auto">
+                                    <img :src="item.image" :alt="item.title" class="object-fill rounded-lg object-center w-full aspect-3/2  overflow-hidden">
+                                </div>
+                                <div class="px-4 pb-4">
+                                    <h2 class="font-medium font-sans text-sm lg:text-lg text-gray-200 text-center mt-4 mb-2" x-text="item.title"></h2>
+                                </div>
+                            </div>
+                        </a>
+                    </template>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="w-full relative bg-gradient-to-t from-[#1c2a43] from-90% to-[#213448] to-100%">
+            <div class="px-10 lg:px-44 pt-14 lg:pt-28 pb-16 w-full">
+                <h1 class="text-3xl lg:text-5xl text-cream  font-bold mb-4 z-20 text-start md:text-center">Kirim Pesan</h1>
+                <p class="text-gray-custom text-start md:text-center font-medium text-sm lg:text-xl break-words mb-4 md:mb-12 text-pretty">Ayo lakukan percakapan lebih lanjut untuk bekerja sama dan membangun kesepakatan bisnis &#129309;</p>
+                <form id="contactForm" class="w-full flex justify-center">
+                    <div class="w-full lg:w-2/3">
+                        <div class="flex flex-col md:flex-row md:gap-4 items-center mb-4 w-full">
+                            <div class="mb-4 md:mb-0 w-full">
+                                <label for="" class="text-gray-300 text-sm lg:text-xl font-semibold block mb-2">Nama</label>
+                                <input  type="text" name="name" placeholder="Masukkan Nama" class="rounded-lg px-2 py-1 bg-[#424d61] text-lg text-white w-full" required/>
+                            </div>
+                            <div class="mb-4 md:mb-0 w-full">
+                                <label for="" class="text-gray-300 text-sm lg:text-xl font-semibold block mb-2">Email</label>
+                                <input type="email" name="email" placeholder="Masukkan Email" class="rounded-lg px-2 py-1 bg-[#424d61] text-lg text-white w-full" required/>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="" class="text-gray-300 text-sm lg:text-xl font-semibold block mb-2">Pesan</label>
+                            <textarea rows="8" placeholder="Masukkan Pesan" name="message" class="rounded-lg px-2 py-1 bg-[#424d61] text-lg text-white w-full" required></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <button id="submit" type="submit" class="cursor-pointer px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-lg font-semibold text-sm md:text-lg">Submit</button>
+                            <button id="process" type="button" class="hidden px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-lg font-semibold ext-sm md:text-lg flex gap-2 items-center" disabled>
+                                <span class="w-5 h-5 border-t-3 border-blue-900 rounded-full animate-spin"></span>
+                                Processing
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            emailjs.init("XyWsjxQHZcZP0Ma_f");
+            const submit = document.getElementById("submit")
+            const process = document.getElementById("process")
+
+            document.getElementById("contactForm").addEventListener('submit', function (e) {
+                submit.classList.add('hidden')
+                process.classList.remove('hidden')
+                e.preventDefault()
+                
+                emailjs.sendForm('service_qrz591j','template_gm5y5ik',this)
+                .then(function(response){
+                    contactForm.reset()
+                    alert('Berhasil Mengirim Pesan')
+                    process.classList.add('hidden')
+                    submit.classList.remove('hidden')
+                },(err)=>{
+                    process.classList.add('hidden')
+                    submit.classList.remove('hidden')
+                    alert('Gagal Mengirim Pesan')
+                    console.log(err)
+                })
+
+                emailjs.send('service_qrz591j','template_2syjhno',{
+                    email: this.email.value,
+                    name: this.name.value
+                })
+                .then(function(response){
+                    
+                },(err)=>{
+                    alert('Gagal Mendapat Balasan Pesan')
+                    console.log(err)
+                })
+            })
+        })
+
+        AOS.init();
+
+        lightbox.option({
+        'resizeDuration': 200,
+        'positionFromTop':50,
+        'disableScrolling':true,
+        'maxWidth':700,
+        })
+
+        new Typed("#typewriter",{
+            strings:['Web Developer','Frontend Developer','Backend Developer'],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true,
+            backDelay:2000,
+            showCursor:true,
+            cursorChar:'|'
+        });
+
+        function loadData(){
+            return {
+                items:[],
+                certifications:[],
+                async fetchData() {
+                    try{
+                        const response = await fetch('/data/portofolio.json')
+                        this.items = await response.json()
+                    }catch (err){
+                        console.log("Error : "+err)
+                    }
+                },
+                async getCertificate(){
+                    try{
+                        const response = await fetch('/data/sertifikat.json')
+                        this.certifications = response.json()
+                    }catch (err){
+                        console.log("Error : ",err)
+                    }
+                }
+            }
+        }
+
+    
+    </script>
 </body>
 </html>

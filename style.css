@@ -3,34 +3,38 @@ body{
     font-size: 12px;
 }
 
-.bg-primary{
-    background-color: #27548A;
-}
-
 .bg-secondary{
-    background-color: #F5EEDC;
+    background-color: #1c2a43;
 }
 
-.bg-orange{
-    background-color: #DDA853;
+.bg-primary{
+    background-color: #213448;
 }
 
-.bg-blue{
-    background-color: #183B4E;
+.bg-gray-custom{
+    background-color: #94B4C1;
 }
 
-.text-primary{
-    color: #27548A;
+.bg-cream{
+    background-color: #ECEFCA;
 }
 
 .text-secondary{
-    color: #F5EEDC;
+    color: #547792;
 }
 
-.text-orange{
-    color: #DDA853;
+.text-primary{
+    color: #213448;
 }
 
-.text-blue{
-    color: #183B4E;
+.text-gray-custom{
+    color: #94B4C1;
+}
+
+.text-cream{
+    color: #ECEFCA;
+}
+
+.border-primary{
+    border-color: #213448;
 }
