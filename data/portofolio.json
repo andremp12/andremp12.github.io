@@ -3,7 +3,7 @@
         "id":1,
         "title":"Frontend Ngepay",
         "description":"Berkontribusi dalam pengembangan frontend sistem Ngepay yang interakrif, sebuah platform e-wallet yang digunakan klien dalam proses penyimpanan dan penarikan dana ke rekening bank yang terhubung.",
-        "image":"/images/ngepay.png",
+        "image":"/images/ngepay.webp",
         "tools":[
             {
                 "id":1,
@@ -29,7 +29,7 @@
         "id":2,
         "title":"Web Youth Khalifa",
         "description":"Project yang dibangun selama bekerja di perusahaan Yogyakarta. Mengembangkan website sekolah dasar yang responsif dengan menyediakan fasilitas sistem seperti CMS untuk manajemen konten sekolah, form pendafataran murid baru, dashboard CMS, dan dashboard calon murid baru.",
-        "image":"/images/youth-khalifa.png",
+        "image":"/images/youth-khalifa.webp",
         "tools":[
             {
                 "id":1,
@@ -52,7 +52,7 @@
             {
                 "id":4,
                 "name":"Livewire",
-                "image":"/images/livewire.png",
+                "image":"/images/livewire.webp",
                 "class":""
             }
         ]
@@ -61,7 +61,7 @@
         "id":3,
         "title":"Sistem Pelayanan Publik",
         "description":"Penelitian tugas akhir, membangun sistem pelayanan publik untuk mewujudkan layanan One Stop Service. Membantu penduduk dalam proses pengajuan dan pembuatan surat melalui sistem ini.",
-        "image":"/images/pelayanan-publik.png",
+        "image":"/images/pelayanan-publik.webp",
         "tools":[
             {
                 "id":1,
@@ -92,7 +92,7 @@
         "id":4,
         "title":"Sistem Ticketing CLI",
         "description":"Sistem aplikasi berbasis website yang dikembangakan selama program magang yang memberikan fitur penanganan ticketing (gangguan/masalah) jaringan pada client PT CLI. Membantu teknisi memilih penangan tiket, serta membuat laporan penangan tiket yang dikerjakan.",
-        "image":"/images/ticketing.png",
+        "image":"/images/ticketing.webp",
         "tools":[
             {
                 "id":1,
@@ -124,7 +124,7 @@
         "id":5,
         "title":"Sistem Pengelolaan Pesanan",
         "description":"Mini project saat perkuliahan, dengan studi kasus proses pemesanan dan pengelolaan pesanan yang masih konvensional di Warkop Harapan Jaya, kota Padang. Website aplikasi yang memberikan fitur pemesanan berdasarkan nomor meja dan proses pengelolaan pesanan oleh pegawai.",
-        "image":"/images/pengelolaan-pesanan.png",
+        "image":"/images/pengelolaan-pesanan.webp",
         "tools":[
             {
                 "id":1,
@@ -150,7 +150,7 @@
         "id":6,
         "title":"Landing Page Dentist",
         "description":"Mini project selama bekerja di Yogyakarta, membangun website profile jasa dokter gigi untuk meningkatkan pemasaran perawatan gigi dan promosi layanan perawatan gigi di klinik Detyas Dentist, Jakarta.",
-        "image":"/images/detyas.png",
+        "image":"/images/detyas.webp",
         "tools":[
             {
                 "id":1,
@@ -176,7 +176,7 @@
         "id":7,
         "title":"Sistem Booking Konstruksi",
         "description":"Mini project diperkuliahan, studi kasus membantu dalam proses booking konstruksi rumah. Memberikan fitur pembokingan konstruksi rumah sesuai tipe yang diinginkan dan monitoring proses pembangunan konstruksi.",
-        "image":"/images/booking-konstruksi.png",
+        "image":"/images/booking-konstruksi.webp",
         "hidden":true,
         "tools":[
             {
@@ -200,7 +200,7 @@
             {
                 "id":4,
                 "name":"Midtrans",
-                "image":"/images/midtrans.png",
+                "image":"/images/midtrans.webp",
                 "class":"bg-white"
             }
         ]
