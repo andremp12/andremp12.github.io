@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
+
+    <style>
+        @media screen and (min-width : 1580px) {
+            .text-7xl-custom {
+                font-size: 6rem;
+                line-height: 1;
+            }
+        }
+    </style>
     
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -26,9 +35,42 @@
             </div>
         </div>
 
-        <!-- Part Navbar -->
-        <nav class="w-full fixed backdrop-blur-md bg-transparent bg-opacity-10 top-0 z-50">
-            <div class="py-6 hidden md:flex md:px-10 lg:px-36 h-auto w-full justify-between gap-4">
+        <!-- Part Navbar Mobile -->
+        <nav class="w-full fixed block md:hidden backdrop-blur-md bg-transparent bg-opacity-10 z-50 bottom-0 left-0">
+            <div class="py-2 flex px-10 h-auto w-full">                
+                    <ul class="flex flex-no-wrap gap-x-1 text-white text-lg w-full items-center justify-around">
+                        <a href="#home" class="">
+                            <li class="p-2 rounded-lg hover:bg-black/20 w-fit h-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" width="10" height="10" viewBox="0 0 24 24"><!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE --><path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"/></svg>
+                            </li>
+                        </a>
+                        <a href="#about" class="">
+                            <li class="p-2 rounded-lg hover:bg-black/20 w-fit h-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE --><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4"/></svg>
+                            </li>
+                        </a>
+                        <a href="#portfolio" class="">
+                            <li class="p-2 rounded-lg hover:bg-black/20 w-fit h-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE --><path fill="currentColor" d="M12.6 18.06c-.36.28-.87.28-1.23 0l-6.15-4.78a.99.99 0 0 0-1.22 0a.997.997 0 0 0 0 1.57l6.76 5.26c.72.56 1.73.56 2.46 0l6.76-5.26c.51-.4.51-1.17 0-1.57l-.01-.01a.99.99 0 0 0-1.22 0zm.63-3.02l6.76-5.26c.51-.4.51-1.18 0-1.58l-6.76-5.26c-.72-.56-1.73-.56-2.46 0L4.01 8.21c-.51.4-.51 1.18 0 1.58l6.76 5.26c.72.56 1.74.56 2.46-.01"/></svg>
+                            </li>
+                        </a>
+                        <a href="#certifications" class="">
+                            <li class="p-2 rounded-lg hover:bg-black/20 w-fit h-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE --><path fill="currentColor" d="m10.92 12.75l1.08-.82l1.07.81c.39.29.92-.08.78-.55l-.42-1.36l1.2-.95c.37-.28.16-.88-.32-.88h-1.4l-.43-1.34a.5.5 0 0 0-.95 0L11.09 9H9.68c-.47 0-.68.6-.31.89l1.19.95l-.42 1.36c-.14.47.39.84.78.55M6 21.61c0 .68.67 1.16 1.32.95L12 21l4.68 1.56a.998.998 0 0 0 1.32-.95v-6.33A7.96 7.96 0 0 0 20 10c0-4.42-3.58-8-8-8s-8 3.58-8 8c0 2.03.76 3.87 2 5.28zM12 4c3.31 0 6 2.69 6 6s-2.69 6-6 6s-6-2.69-6-6s2.69-6 6-6"/></svg>
+                            </li>
+                        </a>
+                        <a href="#contact" class="">
+                            <li class="p-2 rounded-lg hover:bg-black/20 w-fit h-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE --><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44"/></svg>
+                            </li>
+                        </a>
+                    </ul>
+            </div>
+        </nav>
+
+        <!-- Part Navbar Desktop -->
+        <nav class="w-full fixed hidden md:block backdrop-blur-md bg-transparent bg-opacity-10 top-0 z-50">
+            <div class="py-6 flex md:px-10 lg:px-36 h-auto w-full justify-between gap-4">
                 <div class="gap-8 flex items-center text-lg">
                     <div class="w-fit block">
                         <a href="/" class="text-white font-bold text-xl tracking-wide flex items-center">
@@ -54,7 +96,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#portofolio" class="p-2 rounded-lg hover:bg-black/20">
+                            <a href="#portfolio" class="p-2 rounded-lg hover:bg-black/20">
                                 Portofolio
                             </a>
                         </li>
@@ -75,13 +117,13 @@
 
         <!-- Part Home -->
         <div id="home" class="pb-28 pt-28 lg:pt-22 min-h-screen w-full relative">
-            <div class="w-full flex flex-col-reverse lg:flex-row gap-4 lg:gap-7 px-10 lg:px-36 relative">
+            <div class="w-full flex flex-col-reverse lg:flex-row gap-4 lg:gap-10 px-10 lg:px-36 relative md:pt-24 lg:pt-0">
                 <div class="w-full lg:w-1/2 lg:pt-22 z-10 flex flex-col justify-center">
                     <h1 data-aos="fade-right" data-aos-duration="500" class="text-xl text-center lg:text-start md:text-3xl lg:text-4xl text-cream font-light mb-1">Hai semua &#128075;, saya</h1>
-                    <h1 data-aos="fade-right" data-aos-duration="500" class="text-3xl text-center lg:text-start md:text-5xl lg:text-7xl text-cream font-bold mb-1">Andre Mahesa Putra</h1>
+                    <h1 data-aos="fade-right" data-aos-duration="500" class="text-3xl text-center lg:text-start md:text-5xl lg:text-7xl text-7xl-custom text-cream font-bold mb-1">Andre Mahesa Putra</h1>
                     <!-- <div class="w-58 h-2 bg-orange-400 mb-4"></div> -->
                     <div data-aos="fade-right" data-aos-duration="500" class="inline-block min-w-40 text-center lg:text-start min-h-12 lg:min-h-16">
-                        <span id="typewriter" class="text-gray-300 text-center lg:text-start text-lg md:text-2xl lg:text-4xl font-light inline"></span>
+                        <span id="typewriter" class="text-gray-300 text-center lg:text-start text-lg md:text-2xl lg:text-3xl font-light inline"></span>
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="500" class="flex gap-4 items-center justify-center lg:justify-start">
                         <a href="https://www.linkedin.com/in/andre-mahesa-putra-5744b4314" target="_blank" class="group p-3 rounded-full border border-gray-500 hover:bg-gray-100 hover:border-gray-100 flex items-center justify-center transition duration-200">
@@ -121,7 +163,7 @@
                     <div data-aos="fade-left" data-aos-duration="500" class="relative w-fit h-fit">
                         <div class="overflow-hidden rounded-full relative w-auto">
                             <img src="/images/andre-mahesa-putra-2.webp" loading="eager" alt="Andre Mahesa Putra" width="100" height="100" 
-                            class="w-full max-w-[290px] lg:max-w-[580px] h-auto object-cover object-center grayscale-30 md:grayscale-50 z-20 relative -mb-2" />
+                            class="w-full max-w-[290px] lg:max-w-[550px] h-auto object-cover object-center grayscale-30 md:grayscale-50 z-20 relative -mb-2" />
                             
                         </div>
                         <div class="w-full h-auto aspect-square absolute bg-linear-to-t from-[#1c2a43] from-30% via-[#202d44] via-40% to-[#213448] to-70% -bottom-0 rounded-full z-10"></div>
@@ -204,13 +246,13 @@
                         Kemampuan manajemen basis data dan penggunaan teknologi seperti Nuxt js, Laravel, Go, dan Database MySQL dalam pengembangan aplikasi berbasis website. Komunikasi yang baik 
                         dan adaptasi yang cepat untuk saling bekerja sama dan terus berkembang. 
                     </p>
-                    <a href="/pdf/cv-andre.pdf" target="_blank">
+                    <a href="/pdf/cv-andre-mahesa-putra.pdf" target="_blank">
                         <button class="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded-lg font-semibold text-sm lg:text-lg w-fit cursor-pointer ">Download CV</button>
                     </a>
                 </div>
             </div>
         </div>
-        <div id="portofolio" class="min-h-screen w-full relative bg-secondary">
+        <div id="portfolio" class="min-h-screen w-full relative bg-secondary">
             <div class="px-10 lg:px-36 pb-16 lg:pb-28 pt-6 lg:pt-12 w-full overflow-hidden">
                 <h1 data-aos="fade-down" data-aos-duration="500" data-aos="fade-right" data-aos-duration="500" class="text-3xl lg:text-5xl text-cream text-start font-bold mt-8 mb-2 lg:mb-4 z-20">Portofolio</h1>
                 <p data-aos="fade-down" data-aos-duration="500" class="text-gray-custom font-medium text-sm lg:text-xl break-words mb-6 lg:mb-12 text-pretty">Beberapa project-project saya dalam meningkatkan skill dan pengalaman</p>
